@@ -47,8 +47,7 @@ requirements.txt
 
 project/
   
-  data/
-    
+--data/
     input_pdfs/ # aquí pegas los PDFs
     output/ # aquí se genera el Excel
 

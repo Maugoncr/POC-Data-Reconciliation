@@ -1,0 +1,25 @@
+# .gitignore
+```gitignore
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs/Editors
+.vscode/
+.idea/
+
+# Data / generated artifacts
+project/data/input_pdfs/*
+project/data/output/*
+!project/data/input_pdfs/.gitkeep
+!project/data/output/.gitkeep
+
+# Jupyter / notebooks (si llegaras a usarlos)
+.ipynb_checkpoints/

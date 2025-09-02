@@ -35,21 +35,17 @@ XlsxWriter>=3.1
 
 ## 🗂️ Estructura de carpetas
 
-data-reconciliation
-
-README.md
-
-gitignore
-
-extract.py
-
-requirements.txt
-
-project/
-  
---data/
-    input_pdfs/ # aquí pegas los PDFs
-    output/ # aquí se genera el Excel
+```bash
+data-reconciliation/
+├─ README.md
+├─ .gitignore
+├─ extract.py
+├─ requirements.txt
+└─ project/
+  └─ data/
+    ├─ input_pdfs/ # aquí pegas los PDFs
+    └─ output/ # aquí se genera el Excel
+```
 
 ## ⚙️ Instalación y uso
 

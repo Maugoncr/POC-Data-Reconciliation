@@ -1,0 +1,689 @@
+{
+	"study": "0616-029_TST1",
+	"source": "SDE",
+	"primary_source": false,
+	"blinded": false,
+	"edc_matching": {
+		"study": {
+			"target": "name"
+		},
+		"site": {
+			"target": "number"
+		},
+		"event": {
+			"generate": true,
+			"target": [
+				"external_id"
+			]
+		}
+	},
+	"data": [
+		{
+			"filename": "SYS_EVT.csv",
+			"rowid": {
+				"distinctid": [
+					"GUID"
+				]
+			},
+			"study": "STUDYID",
+			"site": "SITENUM",
+			"subject": "SUBJID",
+			"event": {
+				"column": "EVENTEID"
+			},
+			"items": {
+				"COUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUP": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUPDEF": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUPEID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENT": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENTDEF": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"ESEQ": {
+					"type": "integer",
+					"blinded": false
+				},
+				"LASTMODDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"CASEBDEF": {
+					"type": "integer",
+					"blinded": false
+				},
+				"STATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTREAS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"WINSTAT": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"DAYSOW": {
+					"type": "integer",
+					"blinded": false
+				},
+				"EXPFORMS": {
+					"type": "integer",
+					"blinded": false
+				},
+				"FORMEOD": {
+					"type": "integer",
+					"blinded": false
+				},
+				"GUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTRUN": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				}
+			}
+		},
+		{
+			"filename": "SYS_FORM.csv",
+			"rowid": {
+				"distinctid": [
+					"GUID"
+				]
+			},
+			"study": "STUDYID",
+			"site": "SITENUM",
+			"subject": "SUBJID",
+			"event": {
+				"column": "EVENTEID"
+			},
+			"items": {
+				"COUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUP": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUPDEF": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EGROUPEID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENT": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENTDEF": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"ESEQ": {
+					"type": "integer",
+					"blinded": false
+				},
+				"FORM": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"FORMDEF": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"FORMEID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"FSEQ": {
+					"type": "integer",
+					"blinded": false
+				},
+				"STATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CREATEDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"FIRSTSUBMITDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LASTSUBMITDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"NSUBMITS": {
+					"type": "integer",
+					"blinded": false
+				},
+				"SDVREQ": {
+					"type": "boolean",
+					"blinded": false
+				},
+				"SDVDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"FIRSTSDVDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"SDVLAST": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TOSDV": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"DMRREQ": {
+					"type": "boolean",
+					"blinded": false
+				},
+				"DMRDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"FIRSTDMRDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"DMRLAST": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TODMR": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"FREEZEDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TOFREEZE": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"LOCKDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TOLOCK": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"SIGNDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LSTSGNDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TOSIGN": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"EDT_SUBM": {
+					"type": "float",
+					"length": 20,
+					"blinded": false
+				},
+				"ILB": {
+					"type": "boolean",
+					"blinded": false
+				},
+				"ILBREAS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"GUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTRUN": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				}
+			}
+		},
+		{
+			"filename": "SYS_SAFC.csv",
+			"rowid": {
+				"distinctid": [
+					"GUID",
+					"WWUID",
+					"SAFUID"
+				]
+			},
+			"study": "STUDYID",
+			"site": "SITENUM",
+			"subject": "SUBJID",
+			"event": {
+				"default": "SAFC"
+			},
+			"items": {
+				"COUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CASEID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CASESTATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"EVENTS": {
+					"type": "text",
+					"length": 1500,
+					"blinded": false
+				},
+				"WWUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"SAFUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"FSEQ": {
+					"type": "integer",
+					"blinded": false
+				},
+				"REPDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"MRECDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"REPFIRSTNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"REPLASTNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"REPCOUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTSFNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTMSGDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LASTACKFNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"FLLWUPINSP": {
+					"type": "boolean",
+					"blinded": false
+				},
+				"ADDFLLWUP": {
+					"type": "boolean",
+					"blinded": false
+				},
+				"CREATEDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LASTMODDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"GUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTRUN": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				}
+			}
+		},
+		{
+			"filename": "SYS_SAFM.csv",
+			"rowid": {
+				"distinctid": [
+					"MSGID",
+					"CASEID",
+					"GUID"
+				]
+			},
+			"study": "STUDYID",
+			"site": "SITENUM",
+			"subject": "SUBJID",
+			"event": {
+				"default": "SAFM"
+			},
+			"items": {
+				"COUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"MSGID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CASEID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CASESTATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"MSGSTATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"MSGTYPE": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"SFNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"MRECDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"BATCHNUM": {
+					"type": "integer",
+					"blinded": false
+				},
+				"TRANSDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"TRANSATT": {
+					"type": "integer",
+					"blinded": false
+				},
+				"AS2MSGID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"MDNDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"ACKRECDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"ACKFNAME": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"ACKERROR": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"NULLIFYREASON": {
+					"type": "text",
+					"length": 1500,
+					"blinded": false
+				},
+				"CREATEDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LASTMODDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"GUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTRUN": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				}
+			}
+		},
+		{
+			"filename": "SYS_SUB.csv",
+			"rowid": {
+				"distinctid": [
+					"GUID"
+				]
+			},
+			"study": "STUDYID",
+			"site": "SITENUM",
+			"subject": "SUBJID",
+			"event": {
+				"default": "SUB"
+			},
+			"items": {
+				"COUNTRY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"IXRSID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CASEBDEF": {
+					"type": "integer",
+					"blinded": false
+				},
+				"STATUS": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"GUID": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LASTMODDT": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LASTRUN": {
+					"type": "datetime",
+					"format": "yyyy-MM-dd'T'HH:mmZ",
+					"blinded": false
+				},
+				"LATESTARM": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LATESTCOHORT": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"LATESTSUBSTUDY": {
+					"type": "text",
+					"length": 500,
+					"blinded": false
+				},
+				"CNSNTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"SCRDDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"SCRFAILDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"ENRDDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"RDMDDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"STARTTRTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"ENDTRTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"WTHDRWNDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"STARTFLLWUPDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"LOSTFLLWUPDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				},
+				"CMPLTDT": {
+					"type": "date",
+					"format": "yyyy-MM-dd",
+					"blinded": false
+				}
+			}
+		}
+	]
+}

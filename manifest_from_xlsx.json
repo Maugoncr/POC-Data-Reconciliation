@@ -1,0 +1,95 @@
+{
+  "study": "PDF_EXTRACT_DEMO",
+  "source": "SDE",
+  "primary_source": false,
+  "blinded": false,
+  "edc_matching": {
+    "study": {
+      "target": "name"
+    },
+    "site": {
+      "target": "number"
+    },
+    "event": {
+      "generate": true,
+      "target": [
+        "external_id"
+      ]
+    }
+  },
+  "data": [
+    {
+      "filename": "extract.csv",
+      "rowid": {
+        "distinctid": [
+          "Subject"
+        ]
+      },
+      "site": "Site Number",
+      "subject": "Subject",
+      "event": {
+        "default": "SUB"
+      },
+      "items": {
+        "Site Number": {
+          "blinded": false,
+          "type": "integer"
+        },
+        "Subject": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "Birth Year": {
+          "blinded": false,
+          "type": "integer"
+        },
+        "Age": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "Sex Reported at Birth": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "First Informed Consent Date": {
+          "blinded": false,
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "Randomization/Allocation Date": {
+          "blinded": false,
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "Randomization/Allocation Number": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "Cohort": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "Date of Component ID Assignment": {
+          "blinded": false,
+          "type": "date",
+          "format": "yyyy-MM-dd"
+        },
+        "Component ID": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        },
+        "_source_pdf": {
+          "blinded": false,
+          "type": "text",
+          "length": 500
+        }
+      }
+    }
+  ]
+}

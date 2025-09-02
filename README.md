@@ -45,11 +45,6 @@ data-reconciliation/
 ├─ input_pdfs/ # aquí pegas los PDFs
 └─ output/ # aquí se genera el Excel
 
-
-> Este repositorio puede incluir archivos vacíos (por ejemplo `.gitkeep`) para que Git rastree `input_pdfs/` y `output/` aunque estén vacías.
-
----
-
 ## ⚙️ Instalación y uso
 
 ### 1) Crear entorno virtual e instalar dependencias (Windows PowerShell/CMD)
